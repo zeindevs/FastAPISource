@@ -63,3 +63,8 @@ async def user_login(user: UserLoginSchema = Body(...)):
     if check_user(user):
         return signJWT(user.email)
     return {'error': 'Wrong login details!'}
+
+
+@app.get('/users', tags=['users'])
+async def get_users():
+    return {'data': users}
