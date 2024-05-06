@@ -27,7 +27,7 @@ class JWTBearer(HTTPBearer):
 
         try:
             payload = decodeJWT(jwt_token)
-        except:
+        else:
             payload = None
 
         if payload:

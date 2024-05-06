@@ -10,7 +10,9 @@ class PostSchema(BaseModel):
         json_schema_extra = {
             'example': {
                 'title': "Securing FastAPI application with JWT.",
-                'content': 'In this tutorial, you\'ll learn how to secure your application by enabling authentication using JWT. We\'ll be using PyJWT so sign, encode and decode JWT token....'
+                'content': 'In this tutorial, you\'ll learn how to secure \
+                your application by enabling authentication using JWT. We\'ll \
+                be using PyJWT so sign, encode and decode JWT token....'
             }
         }
 
